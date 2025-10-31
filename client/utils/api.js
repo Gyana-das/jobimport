@@ -1,8 +1,9 @@
 // utils/api.js
 import dotenv from 'dotenv';
 // dotenv.config();
-const API_BASE = process.env.API_BASE || "http://localhost:5000/api/jobs";
-
+// const API_BASE = process.env.API_BASE ;
+const API_BASE="http://13.232.148.14:5001/api/jobs"
+console.log("API_BASE:", API_BASE);
 // Helper: fetch with retry logic
 async function fetchWithRetry(url, options = {}, retries = 3, delay = 1000) {
   try {
